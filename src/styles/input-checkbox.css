@@ -1,0 +1,25 @@
+/********************Checkbox*******************/
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 0.1rem solid;
+  border-color: #000000;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+input[type="checkbox"]:after {
+  content: "";
+}
+
+input[type="checkbox"]:checked:after {
+  content: "\2713";
+  font-size: 1.5rem;
+}

@@ -1,0 +1,19 @@
+/**************Input**********************/
+
+input[type="text"] {
+  font-size: 1rem;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  transition: width 0.25s;
+  word-break: break-word;
+}
+
+input[type="text"]:focus-visible {
+  outline: none;
+  border-bottom: 0.1rem solid;
+}
+
+thead input[type="text"] {
+  color: #f9f9f9;
+}

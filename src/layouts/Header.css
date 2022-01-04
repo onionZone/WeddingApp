@@ -1,0 +1,22 @@
+ul > li {
+  display: inline;
+  list-style: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+ul > li > a {
+  text-decoration: none;
+  font-family: "Louis George Café";
+  color: #000000;
+}
+
+ul > li > a:hover {
+  padding-bottom: 0.2rem;
+  border-bottom: 0.2rem solid;
+  border-color: #000000;
+}
+
+.logo {
+  padding-left: 2rem;
+}

@@ -1,0 +1,23 @@
+/**************Button*******************/
+
+.remove {
+  border: 0 solid;
+  background-color: transparent;
+  font-size: 1.5rem;
+}
+
+.remove:hover > svg {
+  fill: #005544;
+}
+.remove:active > svg {
+  margin: 1px 1px 0;
+  box-shadow: -1px -1px 1px transparent;
+}
+
+thead .remove > svg {
+  fill: #ffffffcc;
+}
+
+thead .remove:hover > svg {
+  fill: #000000cc;
+}

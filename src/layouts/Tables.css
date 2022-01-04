@@ -1,0 +1,16 @@
+.container {
+  background-color: #ffffffcc;
+  text-align: center;
+  padding: 3rem;
+  font-family: "Open Sans";
+  overflow-y: auto;
+  overflow-x: visible;
+  min-width: max-content;
+  max-height: 75vh;
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

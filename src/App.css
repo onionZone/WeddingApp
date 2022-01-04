@@ -1,3 +1,31 @@
+@import "./styles/table.css";
+@import "./styles/input-checkbox.css";
+@import "./styles/input-text.css";
+@import "./styles/button-remove.css";
+@import "./styles/button-add.css";
+@import "./styles/info.css";
+@import "./styles/scroll.css";
+
 header {
+  font-size: 16px;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: sticky;
+}
+
+main {
+  width: 100%;
+  height: 90vh;
+  background-image: url("./images/background.jpg");
+  background-size: cover;
+  position: sticky;
+}
+
+.content {
+  padding: 2rem;
 }

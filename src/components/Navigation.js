@@ -12,13 +12,13 @@ export default function Navigation() {
           <Link to="/budget">BUDGET</Link>
         </li>
         <li>
-          <Link to="/guestlist">GUEST LIST</Link>
+          <Link to="/guests">GUEST LIST</Link>
         </li>
         <li>
           <Link to="/layout">LAYOUT</Link>
         </li>
         <li>
-          <Link to="/layout">CALENDAR</Link>
+          <Link to="/calendar">CALENDAR</Link>
         </li>
       </ul>
     </nav>

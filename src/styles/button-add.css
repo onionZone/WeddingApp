@@ -1,0 +1,33 @@
+/**************Add Guest**********************/
+.add-button {
+  border: 0.1rem solid;
+  font-size: 1rem;
+  width: 10rem;
+  height: 3rem;
+  margin-top: 2rem;
+  border-radius: 1.5rem;
+  border-color: #000000;
+}
+
+.add-button:hover {
+  background-color: #faf9f9;
+}
+
+.add-button:active > svg {
+  margin: 1px 1px 0;
+  box-shadow: -1px -1px 1px transparent;
+}
+
+.add-item-btn {
+  border: none;
+  background-color: transparent;
+}
+
+.add-item-btn :hover > svg {
+  color: #faf9f9;
+}
+
+.add-item-btn :active > svg {
+  margin: 1px 1px 0;
+  box-shadow: -1px -1px 1px transparent;
+}

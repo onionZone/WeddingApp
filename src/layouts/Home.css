@@ -1,0 +1,38 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffffcc;
+  text-align: center;
+  padding: 5rem;
+  font-family: "Open Sans";
+}
+
+.home-button {
+  border: 0.1rem solid;
+  font-size: 1.5rem;
+  width: 10rem;
+  height: 3rem;
+  margin-top: 2rem;
+  border-radius: 1.5rem;
+  border-color: #000000;
+}
+
+.home-button:hover {
+  background-color: #faf9f9;
+}
+
+.logo-big {
+  animation: logo 2s ease;
+  transform-origin: center;
+}
+
+@keyframes logo {
+  from {
+    transform: rotateZ(360deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}

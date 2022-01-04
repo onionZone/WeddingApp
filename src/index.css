@@ -1,3 +1,11 @@
 html {
-  background-color: #f5f6f0;
+  background-color: #ffffff;
+  font-size: 14px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  margin: 0px;
 }
