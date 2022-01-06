@@ -2,7 +2,7 @@ import React from "react";
 
 export default function RoundTable() {
   return (
-    <div>
+    <div className="container">
       <svg height="100" width="100">
         <circle
           cx="50"

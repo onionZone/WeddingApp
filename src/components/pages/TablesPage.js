@@ -1,39 +1,21 @@
 import React, { useState } from "react";
-import logo from "../../images/logo.svg";
+import DropBox from "./Tables/DropBox";
 import RoundTable from "./Tables/RoundTable";
 
 export default function TableLayout() {
-  const [state, setstate] = useState([]);
 
-  let counter = state.length;
+  const [layout, setLayout] = useState([{
+    table: 0,
+    chairs: 0,
+    x: 0,
+    y: 0,
+  }])
 
-  const onDragOver = (e) => {
-    e.preventDefault();
-  };
-
-  const onDrop = (e) => {
-    counter++;
-    setstate(state.push(counter));
-  };
-
+  layout.map{}
   return (
     <div className="page">
-      <div className="container">
-        <div draggable>
-          <RoundTable />
-        </div>
-      </div>
-      <div
-        className="container"
-        onDragOver={(e) => {
-          onDragOver(e);
-        }}
-        onDrop={(e) => {
-          onDrop(e);
-        }}
-      >
-        {state}
-      </div>
+      <RoundTable />
+      <DropBox />
     </div>
   );
 }

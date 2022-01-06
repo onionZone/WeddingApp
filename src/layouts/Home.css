@@ -1,30 +1,16 @@
 .home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: #ffffffcc;
-  text-align: center;
   padding: 5rem;
-  font-family: "Open Sans";
+  text-align: center;
 }
 
-.home-button {
-  border: 0.1rem solid;
-  font-size: 1.5rem;
-  width: 10rem;
-  height: 3rem;
-  margin-top: 2rem;
-  border-radius: 1.5rem;
-  border-color: #000000;
+#logo-big {
+  width: 100%;
+  height: auto;
 }
 
-.home-button:hover {
-  background-color: #faf9f9;
-}
-
-.logo-big {
-  animation: logo 2s ease;
+#logo-big #outer {
+  animation: logo 10s linear infinite;
   transform-origin: center;
 }
 
