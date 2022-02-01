@@ -5,8 +5,6 @@
   font-family: "Open Sans";
   overflow-y: auto;
   overflow-x: visible;
-  max-height: 75vh;
-  min-width: max-content;
 }
 
 .category {

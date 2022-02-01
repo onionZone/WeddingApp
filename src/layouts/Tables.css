@@ -1,16 +1,30 @@
 .container {
   background-color: #ffffffcc;
   text-align: center;
-  padding: 3rem;
   font-family: "Open Sans";
   overflow-y: auto;
   overflow-x: visible;
-  min-width: max-content;
-  max-height: 75vh;
+}
+
+.drop-box {
+  background-color: #ffffffcc;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  overflow-y: visible;
+  overflow-x: visible;
+  position: relative;
 }
 
 .page {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: stretch;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
 }

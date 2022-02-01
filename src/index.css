@@ -1,11 +1,14 @@
 html {
   background-color: #ffffff;
+  height: 100%;
   font-size: 14px;
+  margin: 0;
 }
 
 body {
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  margin: 0px;
+  height: auto;
+  margin: 0;
 }

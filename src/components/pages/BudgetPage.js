@@ -165,12 +165,12 @@ export default function BudgetPage() {
         itemCounter = category.items.length;
         category.items.push(defaultItem);
       }
+      return _budget;
     });
 
     setBudget(_budget);
 
     console.log("Item add");
-    console.log(_budget);
   };
 
   const changeCategory = (category) => {
@@ -180,6 +180,7 @@ export default function BudgetPage() {
       if (_budget.id === category.id) {
         _budget = category;
       }
+      return _budget;
     });
 
     setBudget(_budget);
@@ -188,6 +189,7 @@ export default function BudgetPage() {
 
   const changeItem = (categoryID, item) => {
     let _budget = [...budget];
+
     _budget.map((_budget) => {
       if (_budget.id === categoryID) {
         _budget.items.map((_item) => {
@@ -196,6 +198,7 @@ export default function BudgetPage() {
           }
         });
       }
+      return _budget;
     });
     setBudget(_budget);
     console.log("Changed category: " + categoryID);

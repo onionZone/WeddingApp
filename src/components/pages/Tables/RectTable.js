@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function DropBox() {
+export default function RectTable() {
   return <div></div>;
 }

@@ -29,6 +29,7 @@ export default function GuestsPage() {
       if (_guest.id === guest.id) {
         _guest = guest;
       }
+      return _guest;
     });
 
     setGuests(_guests);

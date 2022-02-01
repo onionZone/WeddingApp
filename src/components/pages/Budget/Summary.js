@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 
 import { Bar } from "react-chartjs-2";
 import {
@@ -92,6 +91,19 @@ export default function Summary(props) {
           borderWidth: 1,
         },
       ],
+    },
+    options: {
+      plugins: {
+        legend: {
+          labels: {
+            font: {
+              family: "Open Sans",
+              size: "2rem",
+              color: "black",
+            },
+          },
+        },
+      },
     },
   };
   return (

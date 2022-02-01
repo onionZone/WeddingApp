@@ -5,8 +5,8 @@
   font-family: "Open Sans";
   overflow-y: auto;
   overflow-x: visible;
-  min-width: max-content;
-  max-height: 75vh;
+  height: auto;
+  width: 100%;
 }
 
 .wraper {
@@ -31,4 +31,5 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: stretch;
 }
