@@ -17,7 +17,7 @@ export default function Budget(props) {
   });
 
   return (
-    <div className="budget">
+    <div id="budget" className="container">
       {categories}
       <button className="add-button" onClick={() => props.addCategory()}>
         ADD CATEGORY

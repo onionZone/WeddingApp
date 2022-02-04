@@ -12,7 +12,7 @@ import CalendarPage from "./pages/CalendarPage";
 
 export default function Content() {
   return (
-    <div className="content">
+    <>
       <Routes>
         <Route exact path="/" element={<HomePage />}></Route>
         <Route path="/budget" element={<BudgetPage />}></Route>
@@ -27,6 +27,6 @@ export default function Content() {
         ></Route>
         <Route path="/calendar" element={<CalendarPage />}></Route>
       </Routes>
-    </div>
+    </>
   );
 }

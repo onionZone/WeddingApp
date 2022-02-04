@@ -205,7 +205,7 @@ export default function BudgetPage() {
   };
 
   return (
-    <div className="page">
+    <section>
       <Budget
         budget={budget}
         deleteItem={deleteItem}
@@ -216,6 +216,6 @@ export default function BudgetPage() {
         addCategory={addCategory}
       />
       <Summary budget={budget} />
-    </div>
+    </section>
   );
 }

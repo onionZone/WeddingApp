@@ -78,7 +78,7 @@ export default function GuestsPage() {
   };
 
   return (
-    <div className="page">
+    <section>
       {guests && (
         <Guests
           guests={guests}
@@ -90,6 +90,6 @@ export default function GuestsPage() {
       )}
 
       <Summary guests={guests} />
-    </div>
+    </section>
   );
 }

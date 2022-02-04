@@ -1,14 +1,16 @@
-html {
-  background-color: #ffffff;
+html,
+body {
   height: 100%;
-  font-size: 14px;
-  margin: 0;
+  width: 100%;
+  margin: 0px;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  height: auto;
-  margin: 0;
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-size: 10pt;
+  font-family: "Open Sans";
 }

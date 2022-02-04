@@ -93,21 +93,12 @@ export default function Summary(props) {
       ],
     },
     options: {
-      plugins: {
-        legend: {
-          labels: {
-            font: {
-              family: "Open Sans",
-              size: "2rem",
-              color: "black",
-            },
-          },
-        },
-      },
+      responsive: true,
+      maintainAspectRatio: true,
     },
   };
   return (
-    <div className="chart">
+    <div id="chart" className="summary">
       <Bar data={data.data} options={options} />
     </div>
   );

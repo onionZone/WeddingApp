@@ -7,30 +7,53 @@
 @import "./styles/scroll.css";
 
 header {
-  font-size: 1.2rem;
-  margin: 0;
-  text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: center;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  position: sticky;
+  background-color: #ffffffcc;
+  width: 100%;
+  position: absolute;
+  top: 0;
 }
 
 main {
-  width: 100%;
-  height: auto;
-  background-image: url("./images/background.jpg");
-  background-size: cover;
-  position: sticky;
-}
-
-.content {
-  padding: 2rem;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-image: url("./images/background.jpg");
+  background-size: cover;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.container,
+.summary {
+  background-color: #ffffffcc;
+  text-align: center;
+
+  padding: 2rem;
+  margin: 2rem;
+
+  max-height: 80%;
+  min-height: 80%;
+
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

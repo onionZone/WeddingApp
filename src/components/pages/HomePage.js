@@ -2,12 +2,8 @@ import React from "react";
 import Logo from "./Home/Logo";
 
 import "../../layouts/Home.css";
+const style = { height: "100%" };
 
 export default function Start() {
-  return (
-    <div className="home">
-      <Logo />
-      <button className="add-button">GET START</button>
-    </div>
-  );
+  return <Logo />;
 }

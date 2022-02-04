@@ -190,27 +190,29 @@ export default function TableLayout() {
   );
 
   return (
-    <div className="page">
-      <div className="container">
+    <section>
+      <div className="tables">
         <TableList addTable={addTable} />
       </div>
-      <div className="drop-box" ref={drop} onClick={deactiveChair}>
-        {tables.map((table) => (
-          <Table
-            key={table.id}
-            table={table}
-            removeTable={removeTable}
-            addChair={addChair}
-            removeChair={removeChair}
-            activeChair={activeChair}
-          />
-        ))}
+      <div className="container">
+        <div className="drop-box" ref={drop} onClick={deactiveChair}>
+          {tables.map((table) => (
+            <Table
+              key={table.id}
+              table={table}
+              removeTable={removeTable}
+              addChair={addChair}
+              removeChair={removeChair}
+              activeChair={activeChair}
+            />
+          ))}
+        </div>
       </div>
       {active && (
-        <div className="container">
+        <div className="guests">
           <GuestList guests={guests} addGuest={addGuest} />
         </div>
       )}
-    </div>
+    </section>
   );
 }

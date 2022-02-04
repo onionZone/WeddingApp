@@ -1,39 +1,7 @@
-.budget {
-  background-color: #ffffffcc;
-  text-align: center;
-  padding: 3rem;
-  font-family: "Open Sans";
-  overflow-y: auto;
-  overflow-x: visible;
-}
-
-.category {
-  margin-bottom: 1rem;
-}
-
-.wraper {
-  background-color: #ffffffcc;
-  text-align: center;
-  padding: 5rem;
-  font-family: "Open Sans";
-}
-
-.page {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.add-row {
-  background-color: transparent !important;
-}
-
-.chart {
-  background-color: #ffffffcc;
-  text-align: center;
-  padding: 3rem;
-  margin-left: 3rem;
-  flex: 0 0 40%;
+#chart {
   width: 100%;
-  height: auto;
+}
+
+#budget {
+  min-width: max-content !important;
 }

@@ -7,29 +7,31 @@ export default function Summary(props) {
   const overnight = guests.filter((guest) => guest.overnight).length;
   const adult = guests.filter((guest) => guest.adult).length;
   const children = guests.filter((guest) => !guest.adult).length;
+  const invited = guests.filter((guest) => guest.invited).length;
+  const confirmed = guests.filter((guest) => guest.invited).length;
+
   return (
-    <div className="wraper">
-      <div>
-        <span>Staying overnight:</span>
-        <span>{overnight}</span>
-      </div>
-      <div>
-        <span>Adults:</span>
-        <span>{adult}</span>
-      </div>
-      <div>
-        <span>Childrens:</span>
-        <span>{children}</span>
-      </div>
-      <hr></hr>
-      <div>
-        <span>
-          <strong>Overall:</strong>
-        </span>
-        <span>
-          <strong>{overall}</strong>
-        </span>
-      </div>
+    <div className="summary">
+      <h4>Staying overnight:</h4>
+      <h1>
+        {overnight} / {overall}
+      </h1>
+      <h4>Adults:</h4>
+      <h1>
+        {adult} / {overall}
+      </h1>
+      <h4>Childrens:</h4>
+      <h1>
+        {children} / {overall}
+      </h1>
+      <h4>Invited:</h4>
+      <h1>
+        {invited} / {overall}
+      </h1>
+      <h4>Confirmed:</h4>
+      <h1>
+        {confirmed} / {overall}
+      </h1>
     </div>
   );
 }
