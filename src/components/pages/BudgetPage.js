@@ -165,7 +165,6 @@ export default function BudgetPage() {
         itemCounter = category.items.length;
         category.items.push(defaultItem);
       }
-      return _budget;
     });
 
     setBudget(_budget);
