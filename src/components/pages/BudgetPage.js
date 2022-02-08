@@ -1,108 +1,22 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Budget from "./Budget/Budget";
 import "../../layouts/Budget.css";
 import Summary from "./Budget/Summary";
 
 export default function BudgetPage() {
   const [budget, setBudget] = useState([
-    {
-      id: 1,
-      name: "Wedding Party",
-      items: [
-        {
-          id: 1,
-          name: "Wedding hall",
-          supplier: "Hallmex",
-          price: 30000,
-          paid: 1500,
-        },
-        {
-          id: 2,
-          name: "Cakes",
-          supplier: "Cake",
-          price: 111,
-          paid: 333,
-        },
-        {
-          id: 3,
-          name: "Drinks",
-          supplier: "Macro",
-          price: 111,
-          paid: 333,
-        },
-        {
-          id: 4,
-          name: "Tort",
-          supplier: "Bakery Smith",
-          price: 111,
-          paid: 333,
-        },
-      ],
-    },
-    {
-      id: 2,
-      name: "Music",
-      items: [
-        {
-          id: 1,
-          name: "Band",
-          supplier: "Sway",
-          price: 12000,
-          paid: 4000,
-        },
-        {
-          id: 2,
-          name: "Church",
-          supplier: "4Strings Group",
-          price: 2000,
-          paid: 0,
-        },
-      ],
-    },
-    {
-      id: 2,
-      name: "Clothes",
-      items: [
-        {
-          id: 1,
-          name: "Dress",
-          supplier: "Zara",
-          price: 5000,
-          paid: 300,
-        },
-        {
-          id: 2,
-          name: "Suite",
-          supplier: "Bytom",
-          price: 3000,
-          paid: 1000,
-        },
-      ],
-    },
-    {
-      id: 3,
-      name: "Transport",
-      items: [
-        {
-          id: 1,
-          name: "Car renting",
-          supplier: "Auto Skup",
-          price: 700,
-          paid: 100,
-        },
-      ],
-    },
+    
   ]);
 
-  /*   useEffect(() => {
+  useEffect(() => {
     const fetchData = async () => {
-      const result = await fetch("http://localhost:3000/guests.json");
+      const result = await fetch("http://localhost:3000/budget.json");
       const data = await result.json();
-      setGuests(data.guests);
+      setBudget(data.budget);
     };
     fetchData();
-  }, [setGuests]); */
+  }, [setBudget]);
 
   let categoryCounter = budget.length + 1;
 
