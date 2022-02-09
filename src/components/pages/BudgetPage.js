@@ -5,10 +5,14 @@ import "../../layouts/Budget.css";
 import Summary from "./Budget/Summary";
 
 export default function BudgetPage() {
-  const [budget, setBudget] = useState([
-    
-  ]);
+  /*
+   * Budget state hook
+   */
+  const [budget, setBudget] = useState([]);
 
+  /*
+   * Load data from file budget.js
+   */
   useEffect(() => {
     const fetchData = async () => {
       const result = await fetch("http://localhost:3000/budget.json");
@@ -20,11 +24,17 @@ export default function BudgetPage() {
 
   let categoryCounter = budget.length + 1;
 
+  /*
+   * Delete catagory. Paramter - id number of category
+   */
   const deleteCategory = (categoryID) => {
     setBudget(budget.filter((category) => category.id !== categoryID));
     console.log("Deleted category: " + categoryID);
   };
 
+  /*
+   * Delete item. Paramters - id number of category, id number of item
+   */
   const deleteItem = (categoryID, itemID) => {
     let _budget = [...budget];
 
@@ -39,6 +49,9 @@ export default function BudgetPage() {
     console.log("Deleted item: " + itemID + " from " + categoryID);
   };
 
+  /*
+   * Add new default category
+   */
   const addCategory = () => {
     const defaultCategory = {
       id: categoryCounter,
@@ -61,6 +74,9 @@ export default function BudgetPage() {
     console.log("Category add");
   };
 
+  /*
+   * Add new default item to specific category. Parameter - id of category
+   */
   const addItem = (categoryID) => {
     let itemCounter = 0;
 
@@ -86,6 +102,9 @@ export default function BudgetPage() {
     console.log("Item add");
   };
 
+  /*
+   * Change category. Parameter - object category
+   */
   const changeCategory = (category) => {
     let _budget = [...budget];
 
@@ -100,6 +119,9 @@ export default function BudgetPage() {
     console.log("Changed category: " + category.id);
   };
 
+  /*
+   * Change item in specific . Parameter - object item, id number of category
+   */
   const changeItem = (categoryID, item) => {
     let _budget = [...budget];
 

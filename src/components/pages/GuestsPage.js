@@ -4,8 +4,14 @@ import Summary from "./Guests/Summary.js";
 import "../../layouts/Guest.css";
 
 export default function GuestsPage() {
+  /*
+   * Guests state hook
+   */
   const [guests, setGuests] = useState([]);
 
+  /*
+   * Load data from file guests.js
+   */
   useEffect(() => {
     const fetchData = async () => {
       const result = await fetch("http://localhost:3000/guests.json");
@@ -17,11 +23,17 @@ export default function GuestsPage() {
 
   let idCounter = guests.length + 1;
 
+  /*
+   * Delete guest. Paramter - id number of guest
+   */
   const deleteGuest = (id) => {
     setGuests(guests.filter((guest) => guest.id !== id));
     console.log("Deleted guest: " + id);
   };
 
+  /*
+   * Change guest props. Paramter - object guest
+   */
   const changeGuest = (guest) => {
     let _guests = [...guests];
 
@@ -36,6 +48,9 @@ export default function GuestsPage() {
     console.log("Changed guest: " + guest.id);
   };
 
+  /*
+   * Add new default guest.
+   */
   const addGuest = () => {
     const defaultGuest = {
       id: idCounter,
@@ -55,6 +70,9 @@ export default function GuestsPage() {
     console.log("Guest add");
   };
 
+  /*
+   * Sort guest by property name. Paremter - property(name, forname, id etc. ), is reverse ?
+   */
   const sortingGuests = (name, reverse) => {
     let _guests = [...guests];
 

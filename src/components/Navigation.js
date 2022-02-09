@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+/*
+ * Navbar of the site
+ */
+
 export default function Navigation() {
   return (
     <nav className="nav">
